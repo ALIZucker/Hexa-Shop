@@ -7,16 +7,20 @@
   gap: 3.7vw;
   font-weight: 550;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .underlineHover {
   width: 0;
+  transition: width 0.5s ease-in-out;
   height: 2px;
   display: block;
   background-color: black;
 }
-
+.menubox li{
+  width: 63px;
+  text-align: center;
+}
 .menubox li:hover {
   cursor: pointer;
 

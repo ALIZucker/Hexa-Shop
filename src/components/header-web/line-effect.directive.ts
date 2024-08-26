@@ -1,4 +1,4 @@
-import {Directive, HostBinding, HostListener} from '@angular/core';
+import {Directive, ElementRef, HostBinding, HostListener, OnInit} from '@angular/core';
 
 @Directive({
   selector: '[appLineEffect]',
@@ -6,12 +6,19 @@ import {Directive, HostBinding, HostListener} from '@angular/core';
 })
 export class LineEffectDirective {
 
-  constructor() { }
+  constructor(private element: ElementRef) { }
+
+
   @HostBinding('style.width.px') width !:number;
   @HostBinding('style.color')color!:string
-  spanelem=document.querySelector('.underlineHover');
+
   @HostListener('mousemove')MouseMove (e: MouseEvent) {
 
-    this.color='#454545'
+    this.element.nativeElement.children[1].style.width='60px'
+    this.color='#6a6a6a'
+  }
+  @HostListener('mouseleave')MouseLeave (e: MouseEvent) {
+    this.element.nativeElement.children[1].style.width='0'
+    this.color='#000'
   }
 }
