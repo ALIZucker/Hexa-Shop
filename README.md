@@ -1,5 +1,6 @@
 # HexaShop
 
+https://www.figma.com/design/b0V5orc9Ok69ehcooNwTlT/E-commerece-website-(Community)?node-id=195-32&t=E8hcvJd5ImrWjvd4-0
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
 ## Development server
