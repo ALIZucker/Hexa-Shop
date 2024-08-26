@@ -1,0 +1,24 @@
+.menubox {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 100%;
+  margin-right: 5.20vw;
+  gap: 3.7vw;
+  font-weight: 550;
+  align-items: center;
+  font-size: 18px;
+}
+
+.underlineHover {
+  width: 0;
+  height: 2px;
+  display: block;
+  background-color: black;
+}
+
+.menubox li:hover {
+  cursor: pointer;
+
+}
+
