@@ -21,7 +21,7 @@ export class HeaderWebComponent implements OnInit{
     ngOnInit(): void {
         this.menuItems =[
           {label:'Home',
-          url:'/'},{label:'men',url:'/men'},{label:'woman',url:'/women'},{label:'kid',url:'/kid'}
+          url:''},{label:'men',url:'man'},{label:'woman',url:'/women'},{label:'kid',url:'/kid'}
           ,{label:'About',url:'/about'},{label:'Contact',url:'/contact'}
         ]
     }
