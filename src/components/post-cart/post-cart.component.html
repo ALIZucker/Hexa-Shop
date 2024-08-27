@@ -1,31 +1,46 @@
 <p-carousel
   [value]="listPost"
-  [numVisible]="4"
-  [numScroll]="2"
+  [numVisible]="3"
+  [numScroll]="3"
   [circular]="true"
   autoplayInterval="3000">
   <ng-template let-product pTemplate="item">
     <div class="bg-mainBackgroundColor w-[400px] h-[59.28vh] mx-[1.04vw] mt-[2.09vh]  ">
       <div class="mb-3 ">
         <div class="relative mx-auto ">
+          <!--تصاویر-->
           <img
             [src]="product.image"
             [alt]="product.title"
             class="w-full border-round"/>
         </div>
       </div>
-      <p class="ml-[0.72vw] mt-[2.51vh] text-[22px] font-medium">
-        {{ product.title }}
-      </p>
-      <div class="flex justify-content-between align-items-center">
-        <div class=" ml-[0.72vw] mt-[2.1vh] font-semibold text-xl">
-          {{ '$' + product.price }}
+      <!--عنوان پست-->
+      <div class="flex flex-row items-center justify-between  ">
+        <p class="ml-[0.72vw]  text-[22px] font-medium">
+          {{ product.title }}
+        </p>
+        <p-rating [(ngModel)]="product.star" [readonly]="true" [cancel]="false"/>
+
+      </div>
+
+      <!--قیمت و دکمه-->
+      <div class="flex flex-row  ">
+        <div class="flex flex-row   w-[400px] justify-between">
+
+          <p class=" ml-[0.72vw] mt-[2.1vh] font-semibold text-xl">
+            {{ '$' + product.price }}
+          </p>
+
+          <button class="bg-red-800 text-[16px] text-white w-[64px] rounded-xl mr-1.5">ADD</button>
+
         </div>
-        <span>
+      </div>
+      <span>
                             <p-button icon="pi pi-heart" severity="secondary" [outlined]="true"/>
                             <p-button icon="pi pi-shopping-cart" styleClass="ml-2"/>
                         </span>
-      </div>
     </div>
+
   </ng-template>
 </p-carousel>
