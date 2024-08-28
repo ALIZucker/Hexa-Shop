@@ -1,6 +1,6 @@
 <div class=" w-full h-[68.28vh]  justify-center flex flex-row " style="gap:  1.46vw;">
   <section appBannerDirective style="width:610px;height:100%;" class=" relative">
-    <img [src]="dataBanners[0].image" class="mt-[4.51vh] object-cover h-[563px]">
+    <img [src]="dataBanners[0].image" class="mt-[4.51vh] object-cover h-[59.07vh] w-full">
 
     <div style="height:563px" class="absolute z-10 bg-black flex flex-col  my-[4.51vh] w-full top-0 opacity-50">
       <h1 class="text-white font-bold text-[56px] mx-[3.17vw] mt-[18.88vh]">{{ dataBanners[0].title }}</h1>
@@ -11,13 +11,13 @@
 
   <!--ستون دوم بنر-->
   <section style="width: 295px;gap: 2.09vh" class=" flex flex-col relative ">
-    <div (mouseover)="onMouseover(1)" (mouseleave)="onMouseleave(1)" style="height:272px" class="relative">
+    <div (mouseover)="onMouseover(1)" (mouseleave)="onMouseleave(1)" style="height:272px" class="relative ">
       <img [src]="dataBanners[1].image" class="image-banner mt-[4.51vh] w-full">
       <ng-container *ngTemplateOutlet="fadeBackground; context:{ item: dataBanners[1]}"></ng-container>
     </div>
 
-    <div (mouseover)="onMouseover(2)" (mouseleave)="onMouseleave(2)" style="height:272px" class="relative">
-      <img [src]="dataBanners[2].image" class="image-banner mt-[4.5vh]">
+    <div (mouseover)="onMouseover(2)" (mouseleave)="onMouseleave(2)" style="height:272px" class="relative ">
+      <img [src]="dataBanners[2].image" class="image-banner mt-[4.5vh] w-full">
       <ng-container *ngTemplateOutlet="fadeBackground; context:{ item: dataBanners[2]}"></ng-container>
     </div>
   </section>
@@ -30,7 +30,7 @@
     </div>
 
     <div (mouseover)="onMouseover(4)" (mouseleave)="onMouseleave(4)" style="height:272px" class="relative">
-      <img [src]="dataBanners[4].image" class="image-banner mt-[4.5vh]">
+      <img [src]="dataBanners[4].image" class="image-banner mt-[4.5vh] w-full">
       <ng-container *ngTemplateOutlet="fadeBackground; context:{ item: dataBanners[4]}"></ng-container>
     </div>
   </section>
@@ -40,7 +40,7 @@
   #fadeBackground
   let-item="item"
 >
-  <div *ngIf="item.hovered" style="height:272px"
+  <div *ngIf="item.hovered" style="height:28.54vh"
        class="absolute z-10 bg-black flex flex-col items-center  w-full  top-[4.51vh]  bg-opacity-50">
 
     <h1 class="text-white font-bold text-[25px]  mt-[6.82vh]">{{ item.title }}</h1>

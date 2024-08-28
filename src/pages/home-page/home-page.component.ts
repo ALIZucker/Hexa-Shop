@@ -7,6 +7,7 @@ import {DataBackendService} from "./data-backend.service";
 import {Observable} from "rxjs";
 import {HttpErrorResponse} from "@angular/common/http";
 import {ExplorProductComponent} from "../../components/explor-product/explor-product.component";
+import {SocialMediaComponent} from "../../components/social-media/social-media.component";
 
 @Component({
   selector: 'app-home-page',
@@ -14,7 +15,8 @@ import {ExplorProductComponent} from "../../components/explor-product/explor-pro
   imports: [
     BannersComponent,
     ShowPostComponent,
-    ExplorProductComponent
+    ExplorProductComponent,
+    SocialMediaComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'

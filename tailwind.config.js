@@ -8,6 +8,7 @@ module.exports = {
       backgroundColor:{
         'mainBackgroundColor': '#D9D9D9',
         'bodyBackgroundColor': '#e9e9e9',
+        'footerBackgroundColor': '#1E1E1E',
       },
     },
   },

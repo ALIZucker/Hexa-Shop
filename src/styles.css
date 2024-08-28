@@ -7,6 +7,9 @@
     @apply h-[28.54vh] object-center object-cover;
   }
   .image-explor{
-    @apply  my-[3.67vh] rounded-xl w-[330px] h-[430px] opacity-75 ;
+    @apply  my-[3.67vh] rounded-xl w-[17.18vw] object-cover h-[45.1vh] opacity-75 ;
+  }
+  .social-image{
+    @apply max-w-[190px] h-[29.48vh] object-center object-cover;
   }
 }

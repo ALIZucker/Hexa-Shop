@@ -21,7 +21,7 @@ export class BannerDirectiveDirective implements OnInit{
     }
 
     if(this.elementRef.style.height=='563px'){
-      this.elemHeight='563px'
+      this.elemHeight='59.07vh'
     }else {
       this.elemHeight='272px'
     }
