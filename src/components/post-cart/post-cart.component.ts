@@ -1,9 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit,Input} from '@angular/core';
 import {CarouselModule} from "primeng/carousel";
 import {TagModule} from "primeng/tag";
 import {Button} from "primeng/button";
 import { RatingModule } from 'primeng/rating';
-import {postdetail, Postdetail} from "./post-data";
+import { Postdetail} from "../../pages/home-page/post-data";
 import {FormsModule} from "@angular/forms";
 
 @Component({
@@ -22,11 +22,11 @@ import {FormsModule} from "@angular/forms";
 export class PostCartComponent implements OnInit {
   constructor() {
   }
-  listPost!: Postdetail[];
-  value: any=3;
+  @Input({required:true}) listPost!: Postdetail[];
+
 
   ngOnInit(): void {
-    this.listPost=postdetail
+    this.listPost=this.listPost;
   }
 
 }
