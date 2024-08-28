@@ -6,4 +6,7 @@
   .image-banner {
     @apply h-[28.54vh] object-center object-cover;
   }
+  .image-explor{
+    @apply  my-[3.67vh] rounded-xl w-[330px] h-[430px] opacity-75 ;
+  }
 }

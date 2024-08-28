@@ -1,3 +1,27 @@
-<div>
-  asd
+<div class="mainContainer">
+  <section class="flex flex-row bg-black bg-opacity-50 w-[50%]">
+    <img [src]="imageadd1" style="margin-left:5.20vw" class="image-explor">
+    <img [src]="imageadd2" style="margin-left:1.04vw" class="image-explor">
+
+
+  </section>
+  <section class="flex flex-col items-center bg-black bg-opacity-50 w-[50%]">
+    <h2 class="mt-[4.72vh] text-[36px] font-bold text-white ">{{ Title }}</h2>
+    <p class="mx-[4.94vw] mt-[2.09vh] text-white text-[14px]"> It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+      PageMaker including versions of Lorem IpsuLorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+      took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially unchanged.
+      <br>
+      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+      recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsuLorem Ipsum is
+      simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+      essentially unchanged.
+    </p>
+    <app-boten (clicked)="alert('asdasd')" Title="Discover More"></app-boten>
+  </section>
 </div>
+

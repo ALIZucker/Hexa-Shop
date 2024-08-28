@@ -1,6 +1,13 @@
 .mainContainer{
   width: 100%;
   height: 52.46vh;
-  background: url('/assets/image/bacgrou.png')
+  background-image: url('/assets/image/bacgrou.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 
 }
