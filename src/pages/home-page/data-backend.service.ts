@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Postdetail} from "./post-data";
 
@@ -8,10 +8,21 @@ import {Postdetail} from "./post-data";
 })
 export class DataBackendService {
 
+
   constructor(private http: HttpClient) {
   }
 
-  getDataFromBackend(url: string): Observable<Postdetail[][]> {
-    return this.http.get<Postdetail[][]>(url)
+  getDataFromBackend(url: string, index: number): Postdetail[] {
+    let arrayData: Postdetail[] = [];
+    this.http.get<Postdetail[][]>(url).subscribe((response) => {
+        response[index].forEach(post => {
+          console.log(post);
+          arrayData.push(post as Postdetail)
+        })
+      },
+      (error: HttpErrorResponse) => {
+        console.log(error.error.error, "--------------");
+      })
+    return arrayData
   }
 }

@@ -6,35 +6,32 @@ import {dataBannerService} from "../../components/banners/data-service-banner.se
 import {DataBackendService} from "./data-backend.service";
 import {Observable} from "rxjs";
 import {HttpErrorResponse} from "@angular/common/http";
+import {ExplorProductComponent} from "../../components/explor-product/explor-product.component";
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
   imports: [
     BannersComponent,
-    ShowPostComponent
+    ShowPostComponent,
+    ExplorProductComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent implements OnInit {
   menPostItems!: Postdetail[];
-  allDataPosts$!:Observable<Postdetail[][]>;
   womanDataPostsArray:Postdetail[]=[];
+  KidsDataPostsArray:Postdetail[]=[];
   constructor(private dataservice: DataBackendService) {
   }
 
   ngOnInit(): void {
     this.menPostItems = menPostItems
-    this.allDataPosts$ = this.dataservice.getDataFromBackend('http://localhost:3001/Post')
+    this.womanDataPostsArray = this.dataservice.getDataFromBackend('http://localhost:3001/Post',0)
+    this.KidsDataPostsArray = this.dataservice.getDataFromBackend('http://localhost:3001/Post',1)
 
-    this.allDataPosts$.subscribe((response) => {
-       response[0].forEach(post => { console.log(post) ;
-         this.womanDataPostsArray.push(post as Postdetail)})
-      },
-      (error: HttpErrorResponse) => {
-        console.log(error.error.error,"--------------");
-      })
+
 
   }
 
