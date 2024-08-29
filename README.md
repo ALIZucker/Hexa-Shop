@@ -2,7 +2,9 @@
 
 https://www.figma.com/design/b0V5orc9Ok69ehcooNwTlT/E-commerece-website-(Community)?node-id=195-32&t=E8hcvJd5ImrWjvd4-0
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
-#Image
+
+
+##Image
 https://github.com/ALIZucker/Hexa-Shop/blob/main/screencapture-localhost-4200-2024-08-29-11_58_20.png
 ## Development server
 
