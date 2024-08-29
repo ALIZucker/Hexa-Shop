@@ -6,7 +6,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ##Image
 https://github.com/ALIZucker/Hexa-Shop/blob/main/screencapture-localhost-4200-2024-08-29-11_58_20.png
-## Development server
+
+#mockoon
+Mochoon file for server and backend file.first import it.  
+
+
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
