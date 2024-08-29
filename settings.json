@@ -1,0 +1,43 @@
+{
+  "welcomeShown": true,
+  "bannerDismissed": [],
+  "maxLogsPerEnvironment": 100,
+  "truncateRouteName": true,
+  "mainMenuSize": 232,
+  "secondaryMenuSize": 200,
+  "fakerLocale": "en",
+  "fakerSeed": null,
+  "lastChangelog": "8.3.0",
+  "environments": [
+    {
+      "uuid": "dd51eaf0-b0d0-47c5-802f-0003bc9c6144",
+      "path": "C:\\Users\\Sedal\\AppData\\Roaming\\mockoon\\storage\\demo.json",
+      "cloud": false,
+      "lastServerHash": null
+    },
+    {
+      "uuid": "d44f5526-4fa3-4383-8129-6fbee2250ddc",
+      "path": "C:\\Users\\Sedal\\AppData\\Roaming\\mockoon\\storage\\test.json",
+      "cloud": false,
+      "lastServerHash": null
+    }
+  ],
+  "disabledRoutes": {},
+  "collapsedFolders": {},
+  "enableTelemetry": true,
+  "storagePrettyPrint": true,
+  "fileWatcherEnabled": "disabled",
+  "dialogWorkingDir": "C:\\Users\\Sedal\\AppData\\Roaming\\mockoon\\storage",
+  "startEnvironmentsOnLoad": false,
+  "logTransactions": false,
+  "environmentsCategoriesOrder": [
+    "local",
+    "cloud"
+  ],
+  "environmentsCategoriesCollapsed": {
+    "local": false,
+    "cloud": false
+  },
+  "envVarsPrefix": "MOCKOON_",
+  "activeEnvironmentUuid": "d44f5526-4fa3-4383-8129-6fbee2250ddc"
+}

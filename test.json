@@ -1,0 +1,133 @@
+{
+  "uuid": "d44f5526-4fa3-4383-8129-6fbee2250ddc",
+  "lastMigration": 32,
+  "name": "Test",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "e26d0f4e-af57-4dc5-b2bf-1d3975791ec2",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "products",
+      "responses": [
+        {
+          "uuid": "a2007003-086c-4f48-bbe8-d49224def2ea",
+          "body": "[ {\n  data1:{a:\"a\"}\n  ,data2:{v:\"v\"}\n  ,data3:{t:\"t\"}\n}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "ac9cad22-5ad8-4f82-b104-b1a5308e6e21",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "Post",
+      "responses": [
+        {
+          "uuid": "49d43627-77d3-4296-92d2-f0d58c552a6b",
+          "body": "[\n  \n  [\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/woman1.png\", \"star\":3, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/woman2.png\", \"star\":3, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/woman3.png\", \"star\":3, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/woman4.png\", \"star\":3, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/woman5.webp\", \"star\":3, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/woman6.png\", \"star\":3, \"price\":100}\n  \n  ],\n  [\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/kid1.png\", \"star\":3, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/kid2.png\", \"star\":1, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/kid3.png\", \"star\":2, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/kid4.png\", \"star\":3, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/kid1.png\", \"star\":4, \"price\":100},\n    {\"title\":\"Classic Spring\",\"image\":\"./assets/image/kid3.png\", \"star\":3, \"price\":100}\n  ]\n  \n  \n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "e26d0f4e-af57-4dc5-b2bf-1d3975791ec2"
+    },
+    {
+      "type": "route",
+      "uuid": "ac9cad22-5ad8-4f82-b104-b1a5308e6e21"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "8f1d9d57-be48-43b4-ab49-74dc3873c9ed",
+      "id": "fnll",
+      "name": "New data",
+      "documentation": "",
+      "value": "[\n]"
+    }
+  ],
+  "callbacks": []
+}
