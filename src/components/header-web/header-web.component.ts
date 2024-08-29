@@ -18,6 +18,7 @@ interface itemsMenu{
 })
 export class HeaderWebComponent implements OnInit{
   menuItems!: itemsMenu[] ;
+  isShowNavigationItems: boolean=false;
     ngOnInit(): void {
         this.menuItems =[
           {label:'Home',
@@ -27,6 +28,8 @@ export class HeaderWebComponent implements OnInit{
     }
 
 
-
+  onBoolItemChange() {
+  this.isShowNavigationItems = !this.isShowNavigationItems;
+  }
 }
 

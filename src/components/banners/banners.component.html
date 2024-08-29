@@ -10,7 +10,7 @@
   </section>
 
   <!--ستون دوم بنر-->
-  <section style="width: 295px;gap: 2.09vh" class=" flex flex-col relative ">
+  <section style="width: 295px;gap: 2.09vh" class="hidden lg:flex lg:flex-col lg:relative ">
     <div (mouseover)="onMouseover(1)" (mouseleave)="onMouseleave(1)" style="height:272px" class="relative ">
       <img [src]="dataBanners[1].image" class="image-banner mt-[4.51vh] w-full">
       <ng-container *ngTemplateOutlet="fadeBackground; context:{ item: dataBanners[1]}"></ng-container>
@@ -23,7 +23,7 @@
   </section>
 
   <!--ستون سوم بنر-->
-  <section style="width: 295px;gap: 2.09vh" class=" flex flex-col relative ">
+  <section style="width: 295px;gap: 2.09vh" class="hidden lg:flex lg:flex-col lg:relative ">
     <div (mouseover)="onMouseover(3)" (mouseleave)="onMouseleave(3)" style="height:272px" class="relative">
       <img [src]="dataBanners[3].image" class="image-banner mt-[4.51vh] w-full">
       <ng-container *ngTemplateOutlet="fadeBackground; context:{ item: dataBanners[3]}"></ng-container>

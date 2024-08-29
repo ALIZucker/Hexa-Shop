@@ -3,7 +3,16 @@
     <img src="assets/logo_prev_ui.png" class="w-[162px] h-[60px]">
   </section>
 
-  <section class=" w-[66.27vw] h-full ">
+  <section class="lg:hidden mt-margin-Top mr-margin-left">
+    <img src="assets/icons8-hamburger-menu-64.png" (click)="onBoolItemChange()" class="h-[64px] w-[64px]">
+    <div class=" right-0 top-0 h-[105vh]  fixed w-[48vw] bg-bodyBackgroundColor z-10 flex flex-col items-center" *ngIf="isShowNavigationItems">
+      <img src="assets/icons8-cancel-50.png" (click)="onBoolItemChange()" class="w-[32px] h-[32px] mt-[5vh]">
+      <ng-container *ngTemplateOutlet="addMenu"></ng-container>
+    </div>
+  </section>
+
+
+  <section class="hidden lg:w-[66.27vw] lg:h-full lg:block">
     <ul class="menubox" *ngIf="menuItems.length > 0">
       @for (item of menuItems; track $index) {
         <li appLineEffect><a [routerLink]="item.url">{{ item.label }}</a><span class="underlineHover"></span></li>
@@ -12,3 +21,10 @@
   </section>
 
 </div>
+<ng-template #addMenu>
+  <ul class="flex flex-col gap-2 mt-margin-Top" *ngIf="menuItems.length > 0">
+    @for (item of menuItems; track $index) {
+      <li appLineEffect><a [routerLink]="item.url">{{ item.label }}</a><span class="underlineHover"></span></li>
+    }
+  </ul>
+</ng-template>
